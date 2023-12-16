@@ -16,7 +16,6 @@ class PMURideTest {
     private static Ride ride;
     @BeforeAll
     public static void setUpAll(){
-
         student1 = new Student("Mohammed", "Alqadda", "202002837", "MFQ_305@hotmail.com", "+966541005774", "PMU!MFQ7");
         student2 = new Student("Ibrahim", "Aldossary", "201800259", "dossaryibrahim101@gmail.com", "+966500429898", "PMU!Ibra01");
         PMU = new Location("26.145582, 50.089928"); //pmu
@@ -26,7 +25,11 @@ class PMURideTest {
         driver = new Driver(car, someLocation1, student1);
         passenger = new Passenger(someLocation2, PMU,student2);
         ride = new Ride(driver,passenger);
-
-
+    }
+    //Testing Calculating Distance between two locations
+    @Test
+    public void locationTestDistance(){
+        // should be around 13 km
+        assertEquals(13,Math.round(someLocation1.distanceDifference(PMU)));
     }
 }
