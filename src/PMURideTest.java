@@ -59,4 +59,10 @@ class PMURideTest {
         car.setColor("Black");
         assertEquals("Black", car.getColor());
     }
+    //PR-3 car details (model)
+    @Test
+    public void carDetailsModel(){
+        car.setModel("Camry");
+        assertEquals("Camry", car.getModel());
+    }
 }
