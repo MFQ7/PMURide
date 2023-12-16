@@ -16,6 +16,7 @@ class PMURideTest {
     private static Ride ride;
     @BeforeAll
     public static void setUpAll(){
+
         student1 = new Student("Mohammed", "Alqadda", "202002837", "MFQ_305@hotmail.com", "+966541005774", "PMU!MFQ7");
         student2 = new Student("Ibrahim", "Aldossary", "201800259", "dossaryibrahim101@gmail.com", "+966500429898", "PMU!Ibra01");
         PMU = new Location("26.145582, 50.089928"); //pmu
