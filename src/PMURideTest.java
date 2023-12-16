@@ -31,14 +31,22 @@ class PMURideTest {
     public void locationTestDistance(){
         // should be around 13 km
         assertEquals(13,Math.round(someLocation1.distanceDifference(PMU)));
-
-        //PR-3 car details (color)
+    }
+    //PR-10 change password
+    @Test
+    public void studentForgotPassword(){
+        student1.setPassword("PMU!MFQ8");
+        assertEquals("PMU!MFQ8", student1.getPassword());
+    }
+    //PR-10 log in after changing password
+    @Test
+    public void studentLogIn(){
+        assertTrue(student1.login("202002837","PMU!MFQ8"));
+    }
+    //PR-3 car details (color)
     @Test
     public void carDetailsColor(){
         car.setColor("Black");
         assertEquals("Black", car.getColor());
-    }
-
-        
     }
 }
