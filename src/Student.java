@@ -65,4 +65,8 @@ public class Student {
     public void setPassword(String password) {
         this.password = password;
     }
+    public boolean login(String id, String password) {
+        return id.equals(getId()) && password.equals(getPassword());
+    }
+}
 }
