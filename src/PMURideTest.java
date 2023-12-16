@@ -76,4 +76,9 @@ class PMURideTest {
     public void howMuch(){
         assertEquals(45.35, ride.getCost(),0.01);
     }
+     //PR-7 distance of ride
+    @Test
+    public void rideDistance(){
+        assertEquals(17.67, ride.getDistance(),0.01);
+    }
 }
