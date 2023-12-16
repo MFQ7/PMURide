@@ -1,5 +1,4 @@
-
-  public class Car {
+public class Car {
     private String model;
     private String year;
     private String color;

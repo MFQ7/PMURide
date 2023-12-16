@@ -1,6 +1,4 @@
-
-public class Driver {
-  public class Driver extends Student{
+public class Driver extends Student{
     Car car;
     Location location;
 
@@ -35,5 +33,4 @@ public class Driver {
     public void setLocation(Location location) {
         this.location = location;
     }
-}
 }
