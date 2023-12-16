@@ -43,6 +43,16 @@ class PMURideTest {
     public void studentLogIn(){
         assertTrue(student1.login("202002837","PMU!MFQ8"));
     }
+    //PR-6 estimated time
+    @Test
+    public void rideEstimatedTime(){
+        assertEquals(12,ride.getEstimatedTime());
+    }
+    //PR-6 driver location
+    @Test
+    public void getDriverLocation(){
+        assertEquals("26.202606, 50.205981", ride.getDriver().getLocation().getLocationString());
+    }
     //PR-3 car details (color)
     @Test
     public void carDetailsColor(){
