@@ -71,4 +71,9 @@ class PMURideTest {
         car.setYear("2020");
         assertEquals("2020", car.getYear());
     }
+    //PR-5 cost of a ride
+    @Test
+    public void howMuch(){
+        assertEquals(45.35, ride.getCost(),0.01);
+    }
 }
