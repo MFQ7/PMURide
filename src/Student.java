@@ -69,4 +69,3 @@ public class Student {
         return id.equals(getId()) && password.equals(getPassword());
     }
 }
-}
