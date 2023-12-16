@@ -65,4 +65,10 @@ class PMURideTest {
         car.setModel("Camry");
         assertEquals("Camry", car.getModel());
     }
+     //PR-3 car details (year)
+    @Test
+    public void carDetailsYear(){
+        car.setYear("2020");
+        assertEquals("2020", car.getYear());
+    }
 }
