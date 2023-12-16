@@ -31,5 +31,14 @@ class PMURideTest {
     public void locationTestDistance(){
         // should be around 13 km
         assertEquals(13,Math.round(someLocation1.distanceDifference(PMU)));
+
+        //PR-3 car details (color)
+    @Test
+    public void carDetailsColor(){
+        car.setColor("Black");
+        assertEquals("Black", car.getColor());
+    }
+
+        
     }
 }
